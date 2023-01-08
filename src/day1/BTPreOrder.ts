@@ -10,5 +10,6 @@ function walk(curr: BinaryNode<number> | null, path: number []): number[] {
 }
 
 export default function pre_order_search(head: BinaryNode<number>): number[] {
-    return walk(head, []);
+    const path: number[] = [];
+    return walk(head, path);
 }
